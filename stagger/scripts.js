@@ -9,13 +9,13 @@ for(let i=0;i<225;i++){
 const tl=anime.timeline({loop:true})
 tl.add({
     targets:".particle",
-    scale:0.1,
+    scale:0,
     delay:anime.stagger(50,{grid:[15,15],from:0}),
     duration:600,
     translateX:200,
     translateY:200,
-    easing:"easeInOutQuad",
-    backgroundColor:"#fff"
+    easing:"easeInQuad",
+    opacity:0.3
 }).add({
     targets:".particle",
     scale:1,
@@ -23,6 +23,6 @@ tl.add({
     duration:600,
     translateX:0,
     translateY:0,
-    easing:"easeInOutQuad",
-    backgroundColor:"#444"
+    easing:"easeOutQuad",
+    opacity:1
 },"-=10")
