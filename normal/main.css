@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.particle{
+    width: 40px;
+    height: 40px;
+    background: crimson;
+    margin: 2px;
+    box-sizing: border-box;
+}
